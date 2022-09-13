@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: O;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div[class^="square_"] {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+div[class^="square_"]:nth-child(odd) {
+  background-color: #256ab6;
+}
+
+div[class^="square_"]:nth-child(even) {
+  background-color: #dd22aa;
+}
+
+
+
+div[class^="square_"]:nth-child(1) {
+    transition: 1s;
+}
+
+
+
+div[class^="square_"]:nth-child(1):hover {
+    width: 250px;
+    height: 250px;
+    animation-duration: 1s;
+}
+
+div[class^="square_"]:nth-child(2):hover+:nth-child(3){
+    width: 200px;
+    height:200px;
+    animation-duration: 1s;
+}
+
+
+
+
+div[class^="square_"]:nth-child(3) {
+  background: red;
+  transition: 1s;
+
+}
+
+div[class^="square_"]:nth-child(4) {
+  background: pink;
+}
+
+div[class^="square_"]:nth-child(5) {
+  background: yellow;
+}
+
+div[class^="square_"]:nth-child(8) {
+  background: orange;
+}
