@@ -1,0 +1,57 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: O;
+  box-sizing: border-box;
+}
+
+header {
+  background: green;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+nav {
+}
+
+nav a {
+  font-size: 20px;
+  margin: 0 30px;
+  color: white;
+  text-decoration: none;
+  transform: scale(1);
+  transition: 400ms ease-in-out;
+}
+
+nav a:hover {
+  color: blue;
+  transition: 400ms ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section_1 {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div[class^="card"] {
+  width: 330px;
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
